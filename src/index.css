@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .radical-gradient {
+  background: radial-gradient(40px at 40px 100%, #0000 98%, gray) -40px;
+ 
+}
+.top-radical {
+    --mask: radial-gradient(40px at 40px 0,#0000 98%,gray) -40px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+} */
+
+@layer {
+  .radical-gradient {
+    --mask: radial-gradient(15px at 40px 100%, #0000 98%, #000) -40px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+  .top-radical {
+    --mask: radial-gradient(15px at 40px 0, #0000 98%, gray) -40px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}
