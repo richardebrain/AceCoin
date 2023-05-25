@@ -1,9 +1,8 @@
 import mastercard from './assets/mastercard-logo.png'
-import verified from './assets/verified.png'
-import square from './assets/square.svg'
+
 import creditCardChip from './assets/credit-card-chip.jpeg'
 import { useState } from 'react'
-import { formatCreditCard, removeDash } from './helpers'
+import { removeDash } from './helpers'
 import PayForm from './components/PayForm'
 
 
