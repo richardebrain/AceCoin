@@ -20,7 +20,7 @@ function App() {
     cvv: '327',
     expiryYear: '09',
     expiryMonth: '12',
-    password: '12345678'
+    password: '123456'
   })
 
 
@@ -64,7 +64,11 @@ function App() {
       if (isNaN(Number(value)) || value.length > 2) {
         return
       }
-
+    }
+    if(name === 'password'){
+      if(value.length > 6 || isNaN(Number(value))){
+        return
+      }
     }
     setFormValue({
       ...formValue,
